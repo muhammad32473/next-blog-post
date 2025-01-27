@@ -23,20 +23,20 @@ Follow these steps to run the project locally:
 ### 1. Clone the repository
 ```bash
 git clone https://github.com/yourusername/next-blog-app.git
-cd next-blog-app
+cd next-blog-post
 ```
 
 ### 2. Install dependencies
 
 #### Frontend:
 ```bash
-cd frontend
+cd next-frontend
 npm install
 ```
 
 #### Backend:
 ```bash
-cd backend
+cd graphql-backend
 npm install
 ```
 
@@ -81,14 +81,14 @@ CREATE TABLE posts (
 
 #### Backend:
 ```bash
-cd backend
+cd graphql-backend
 npx tsc
 node dist/server.js
 ```
 
 #### Frontend:
 ```bash
-cd frontend
+cd next-frontend
 npm run dev
 ```
 
@@ -108,7 +108,7 @@ The project contains meaningful comments in both frontend and backend code to en
 
 ### Frontend
 ```
-/frontend/
+/next-frontend/
 ├── APOLLO/                  # Apollo-related files for GraphQL
 │   ├── apollo-client.ts     # Apollo Client setup to fetch posts by ID
 │   ├── apollo-queries.ts    # GraphQL queries
