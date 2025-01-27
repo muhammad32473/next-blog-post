@@ -45,7 +45,7 @@ npm install
 #### Frontend `.env`
 Create a `.env` file in the frontend directory with the following content:
 ```env
-NEXT_PUBLIC_GRAPHQL_ENDPOINT=http://localhost:4000/graphql
+GRAPHQL_API=http://localhost:4000/graphql
 ```
 
 #### Backend `.env`
@@ -82,7 +82,8 @@ CREATE TABLE posts (
 #### Backend:
 ```bash
 cd backend
-npm start
+npx tsc
+node dist/server.js
 ```
 
 #### Frontend:
